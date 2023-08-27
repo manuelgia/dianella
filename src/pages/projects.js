@@ -1,13 +1,13 @@
 import React from 'react';
 import Head from "next/head";
-import Layout from "@/components/Layout";
-import AnimatedText from "@/components/AnimatedText";
+import Layout from "../components/Layout";
+import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import {GithubIcon} from "@/components/Icons";
+import {GithubIcon} from "../components/Icons";
 import Project1 from '../../public/images/projects/agency-website-cover-image.jpg'
 import {motion} from "framer-motion";
-import TransitionEffect from "@/components/TransitionEffect";
+import TransitionEffect from "../components/TransitionEffect";
 
 const FramerImage = motion(Image)
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
