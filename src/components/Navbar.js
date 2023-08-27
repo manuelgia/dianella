@@ -71,7 +71,7 @@ const Navbar = () => {
                     <CustomLink href={"/galeria"} title={'Galería'}/>
                 </nav>
                 <nav className={'flex justify-center items-center gap-3 flex-wrap'}>
-                    {/*
+                    {/*Para que se desployee de nuevo
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <LinkedInIcon/>
                     </Link>*/}
