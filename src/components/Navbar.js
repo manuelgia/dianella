@@ -10,7 +10,7 @@ import {
     MoonIcon,
     PinterestIcon,
     SunIcon,
-    TwitterIcon
+    InstagramIcon,  
 } from "@/components/Icons";
 import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
@@ -66,8 +66,10 @@ const Navbar = () => {
             <div className={'w-full flex justify-between items-center lg:hidden'}>
                 <nav className={'flex gap-4'}>
                     <CustomLink href={'/'} title={'Home'}/>
-                    <CustomLink href={"/about"} title={'About'}/>
-                    <CustomLink href={"/projects"} title={'Projects'}/>
+                    <CustomLink href={"/about"} title={'Sobre mí'}/>
+                        
+                    {// <CustomLink href={"/projects"} title={'Projects'}/> 
+                    }
                     <CustomLink href={"/articles"} title={'Articles'}/>
                     <CustomLink href={"https:dianella-galeria.vercel.app"} title={'Galería'}/>
                 </nav>
@@ -79,14 +81,16 @@ const Navbar = () => {
                         <GithubIcon/>
                     </Link>
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
-                        <DribbbleIcon/>
-                    </Link>*/}
-                    <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <PinterestIcon/>
+                        
                     </Link>
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <LinkedInIcon/>
+                    </Link>*/}
+                    <Link className={'w-9'} href={'https:instagram.com/dianella.gallery.art/'} target={'_blank'}>
+                        <InstagramIcon/>
                     </Link>
+                    
                     <button onClick={() => setMode(mode === "light" ? 'dark' : 'light')}
                             className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? 'bg-dark text-light' : 'bg-light text-dark'}`}
                     >
@@ -107,26 +111,28 @@ const Navbar = () => {
                         className={'min-w-[70vw] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-between flex-col items-center z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'}>
                         <nav className={'flex items-center flex-col justify-center'} >
                             <CustomLinkMobile href={'/'} title={'Home'} toggle={handleClick}/>
-                            <CustomLinkMobile href={"/about"} title={'About'} toggle={handleClick}/>
-                            <CustomLinkMobile href={"/projects"} title={'Projects'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/about"} title={'Sobre mí'} toggle={handleClick}/>
+
+
+                            {//<CustomLinkMobile href={"/projects"} title={'Projects'} toggle={handleClick}/>
+                            }
+
                             <CustomLinkMobile href={"/articles"} title={'Articles'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"https:dianella-galeria.vercel.app"} title={'Galería'} toggle={handleClick}/>
                         </nav>
                         <nav className={'flex justify-center items-center gap-3 flex-wrap mt-2'}>
-                            <Link className={'w-9'} href={'/'} target={'_blank'}>
-                                <TwitterIcon/>
-                            </Link>
-                            <Link className={'w-9 bg-light rounded-full dark:bg-dark'} href={'/'} target={'_blank'}>
-                                <GithubIcon/>
-                            </Link>
-                            <Link className={'w-9'} href={'/'} target={'_blank'}>
-                                <DribbbleIcon/>
-                            </Link>
-                            <Link className={'w-9'} href={'/'} target={'_blank'}>
-                                <PinterestIcon/>
-                            </Link>
+                            
+                            {/*
                             <Link className={'w-9'} href={'/'} target={'_blank'}>
                                 <LinkedInIcon/>
                             </Link>
+                            <Link className={'w-9'} href={'/'} target={'_blank'}>
+                                <PinterestIcon/>
+                            </Link> */}
+                            <Link className={'w-9'} href={'https:instagram.com/dianella.gallery.art/'} target={'_blank'}>
+                                <InstagramIcon/>
+                            </Link>
+                            
                             <button onClick={() => setMode(mode === "light" ? 'dark' : 'light')}
                                     className={`ml-3 w-9 flex items-center justify-center rounded-full p-1 ${mode === "light" ? 'bg-dark text-light' : 'bg-light text-dark'}`}
                             >

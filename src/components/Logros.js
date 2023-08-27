@@ -115,26 +115,7 @@ const Experience = () => {
                         address={'Ica, Ica'}
                         work={'Exposición Artística'}
                     />
-                    <Logros
-                        position={'LIII “DÍA DEL ARTISTA PLÁSTICO ”CROMATISMO VISUAL.”'}
-                        company={'Inspiraciones e Invenciones Escénicas S.A.C.'}
-                        companyLink={'https://www.facebook.com/lanubefeliz.pe/'}
-                        time={'07/2017 -Actualidad'}
-                        address={'Lima, Lima'}
-                        work={'Realización y asistencia en escenografía, maquillaje, vestuario, y utilería para las obras teatrales:'}
-                        obras={[
-                                "“No hay Ladrón que por bien no venga” Markham College 2017",
-                                "“Mamma Mía”- Markham College 2018",
-                                "“Mago de Oz”- Cambridge College 2019",
-                                "“Matilda”- Cambridge College 2019",
-                                "“Clue”-Markham College 2022",
-                                "“El musical (Matilda, Hairspray, The Wicked, Anita La Huerfanita, School of Rock, Encanto, El rey león) - Markham College 2022",
-                                "“Charlie y la fábrica de chocolates” Cambridge College 2022."
-                            ]}
-
-
-                    />
-                </ul>
+                    </ul>
             </div>
         </div>
     );
