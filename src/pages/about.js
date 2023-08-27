@@ -84,24 +84,27 @@ const About = () => {
                                 </div>
                                 {/*<div className={'flex flex-col items-end justify-center xl:items-center'}>
                                     <span className={'text-6xl font-bold md:text-6xl sm:text-4xl xs:text-3xl'}>
-                                        <AnimatedNumbers value={50}/>+
+                                        <AnimatedNumbers value={10}/>+
                                     </span>
                                     <h2 className={'text-xl xl:text-center md:text-lg sm:text-base xs:text-sm'}>
-                                        Projects
+                                        Experiencia
                                     </h2>
                                 </div>*/}
                                 
                             </div>
-                            <div className="relative inset-y-0 right-0 w-[300px]">
-                                <Image
-                                src={ImagenAbout}
-                                alt="Imagen de arte"
-                                layout="responsive"
-                                width={300}
-                                height={400}
-                                className='h-auto max-w-lg rounded-full'
-                                />
-                            </div>
+                            
+                                    <div className="relative inset-y-0 right-0 w-[300px]">
+                                        <Image
+                                        src={ImagenAbout}
+                                        alt="Imagen de arte"
+                                        layout="responsive"
+                                        width={300}
+                                        height={400}
+                                        className='h-auto max-w-lg rounded-full'
+                                        
+                                        />
+                                    </div>
+                                
                         </div>
                             
                     </div>
