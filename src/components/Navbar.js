@@ -4,11 +4,8 @@ import Logo from "@/components/Logo";
 import {motion} from "framer-motion";
 import {useRouter} from "next/router";
 import {
-    DribbbleIcon,
-    GithubIcon,
-    LinkedInIcon,
+    
     MoonIcon,
-    PinterestIcon,
     SunIcon,
     InstagramIcon,  
 } from "@/components/Icons";
@@ -71,19 +68,10 @@ const Navbar = () => {
                     {// <CustomLink href={"/projects"} title={'Projects'}/> 
                     }
                     <CustomLink href={"/articles"} title={'Articles'}/>
-                    <CustomLink href={"https:dianella-galeria.vercel.app"} title={'Galería'}/>
+                    <CustomLink href={"https://dianella-galeria.vercel.app"} title={'Galería'}/>
                 </nav>
                 <nav className={'flex justify-center items-center gap-3 flex-wrap'}>
-                    {/*<Link className={'w-9'} href={'/'} target={'_blank'}>
-                        <TwitterIcon/>
-                    </Link>
-                    <Link className={'w-9'} href={'/'} target={'_blank'}>
-                        <GithubIcon/>
-                    </Link>
-                    <Link className={'w-9'} href={'/'} target={'_blank'}>
-                        <PinterestIcon/>
-                        
-                    </Link>
+                    {/*
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <LinkedInIcon/>
                     </Link>*/}
@@ -112,12 +100,10 @@ const Navbar = () => {
                         <nav className={'flex items-center flex-col justify-center'} >
                             <CustomLinkMobile href={'/'} title={'Home'} toggle={handleClick}/>
                             <CustomLinkMobile href={"/about"} title={'Sobre mí'} toggle={handleClick}/>
-
-
                             {//<CustomLinkMobile href={"/projects"} title={'Projects'} toggle={handleClick}/>
                             }
-
                             <CustomLinkMobile href={"/articles"} title={'Articles'} toggle={handleClick}/>
+                            
                             <CustomLinkMobile href={"https:dianella-galeria.vercel.app"} title={'Galería'} toggle={handleClick}/>
                         </nav>
                         <nav className={'flex justify-center items-center gap-3 flex-wrap mt-2'}>
