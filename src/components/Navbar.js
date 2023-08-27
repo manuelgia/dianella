@@ -69,9 +69,10 @@ const Navbar = () => {
                     <CustomLink href={"/about"} title={'About'}/>
                     <CustomLink href={"/projects"} title={'Projects'}/>
                     <CustomLink href={"/articles"} title={'Articles'}/>
+                    <CustomLink href={"https:dianella-galeria.vercel.app"} title={'Galería'}/>
                 </nav>
                 <nav className={'flex justify-center items-center gap-3 flex-wrap'}>
-                    <Link className={'w-9'} href={'/'} target={'_blank'}>
+                    {/*<Link className={'w-9'} href={'/'} target={'_blank'}>
                         <TwitterIcon/>
                     </Link>
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
@@ -79,7 +80,7 @@ const Navbar = () => {
                     </Link>
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <DribbbleIcon/>
-                    </Link>
+                    </Link>*/}
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <PinterestIcon/>
                     </Link>

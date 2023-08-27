@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import {AnimatePresence} from "framer-motion";
 import {useRouter} from "next/router";
 
+
 const montserrat = Montserrat({
     subsets: ['latin'],
     variable: '--font-mont'

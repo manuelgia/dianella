@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import TransitionEffect from "@/components/TransitionEffect";
 import Education from "@/components/Education"
+import Logros from '@/components/Logros';
 
 const AnimatedNumbers = ({value}) => {
     const ref = useRef(null)
@@ -59,10 +60,10 @@ const About = () => {
                         <div className="col-span-2 xl:col-span-8 xl:flex-row xl:items-center flex flex-col gap-16 justify-between items-start">
                             <div className={'flex flex-col items-end justify-center xl:items-center'}>
                                 <span className={'text-6xl font-bold md:text-6xl sm:text-4xl xs:text-3xl'}>
-                                    <AnimatedNumbers value={50}/>+
+                                    <AnimatedNumbers value={100}/>+
                                 </span>
                                 <h2 className={'text-xl xl:text-center md:text-lg sm:text-base xs:text-sm'}>
-                                    Projects
+                                    Alumnos
                                 </h2>
                             </div>
                             <div className={'flex flex-col items-end justify-center xl:items-center'}>
@@ -70,7 +71,7 @@ const About = () => {
                                     <AnimatedNumbers value={50}/>+
                                 </span>
                                 <h2 className={'text-xl xl:text-center md:text-lg sm:text-base xs:text-sm'}>
-                                    Projects
+                                    Projectos
                                 </h2>
                             </div>
                             <div className={'flex flex-col items-end justify-center xl:items-center'}>
@@ -85,7 +86,22 @@ const About = () => {
                     </div>
                     {/*<Skills />*/}
                     <Experience/>
-                    <Education />
+                    <Logros/>
+                        <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:</h2>
+
+                        <ul className={'flex flex-col items-center justify-between ml-4 xs:ml-2'}>
+                            <li>
+                                At least 10 characters (and up to 100 characters)
+                            </li>
+                            <li>
+                                At least one lowercase character
+                            </li>
+                            <li>
+                                Inclusion of at least one special character, e.g., ! @ # ?
+                            </li>
+                        </ul>
+
+                    
                 </Layout>
             </main>
         </>

@@ -24,7 +24,7 @@ export default function Home() {
                                 src={ProfilePicture}
                                 priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                alt='dilz'
+                                alt='foto de perfil'
                                 className={'w-full h-auto lg:hidden md:inline-block md:w-full'}/>
                         </div>
                         <div className={'w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'}>
