@@ -1,12 +1,12 @@
 import React, {useRef} from 'react';
 import Head from "next/head";
-import Layout from "@/components/Layout";
-import AnimatedText from "@/components/AnimatedText";
+import Layout from "../components/Layout";
+import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import BlogImg from '../../public/images/articles/create loading screen in react js.jpg'
 import {motion, useMotionValue} from "framer-motion";
-import TransitionEffect from "@/components/TransitionEffect";
+import TransitionEffect from "../components/TransitionEffect";
 
 const FramerImage = motion(Image);
 

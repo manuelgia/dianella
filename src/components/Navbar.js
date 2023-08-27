@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Link from "next/link";
-import Logo from "@/components/Logo";
+import Logo from "../components/Logo";
 import {motion} from "framer-motion";
 import {useRouter} from "next/router";
 import {
@@ -8,8 +8,8 @@ import {
     MoonIcon,
     SunIcon,
     InstagramIcon,  
-} from "@/components/Icons";
-import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
+} from "../components/Icons";
+import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
 
 const CustomLink = ({href, title, className = ""}) => {
     const router = useRouter()
@@ -68,7 +68,7 @@ const Navbar = () => {
                     {// <CustomLink href={"/projects"} title={'Projects'}/> 
                     }
                     <CustomLink href={"/articles"} title={'Articles'}/>
-                    <CustomLink href={"https://dianella-galeria.vercel.app"} title={'Galería'}/>
+                    <CustomLink href={"/galeria"} title={'Galería'}/>
                 </nav>
                 <nav className={'flex justify-center items-center gap-3 flex-wrap'}>
                     {/*

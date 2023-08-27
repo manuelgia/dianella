@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Layout from "@/components/Layout";
+import Layout from "../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import ProfilePicture from '../../public/images/profile/batman-pic.png'
-import AnimatedText from "@/components/AnimatedText";
-import {LinkArrow} from "@/components/Icons";
-import HireMe from "@/components/HireMe";
-import TransitionEffect from "@/components/TransitionEffect";
+import AnimatedText from "../components/AnimatedText";
+import {LinkArrow} from "../components/Icons";
+import HireMe from "../components/HireMe";
+import TransitionEffect from "../components/TransitionEffect";
 
 export default function Home() {
     return (

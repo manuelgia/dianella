@@ -1,13 +1,13 @@
 import React, {useEffect, useRef} from 'react';
 import Head from "next/head";
-import Layout from "@/components/Layout";
-import AnimatedText from "@/components/AnimatedText";
+import Layout from "../components/Layout";
+import AnimatedText from "../components/AnimatedText";
 import {useInView, useMotionValue, useSpring} from "framer-motion";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import TransitionEffect from "@/components/TransitionEffect";
-import Education from "@/components/Education"
-import Logros from '@/components/Logros';
+import Skills from "../components/Skills";
+import Experience from "../components/Experience";
+import TransitionEffect from "../components/TransitionEffect";
+import Education from "../components/Education"
+import Logros from '../components/Logros';
 import Image from 'next/image';
 import ImagenAbout from '../../public/images/profile/girl-example.jpg'
 

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll } from "framer-motion";
-import LiIcon from "@/components/LiIcon";
+import LiIcon from "../components/LiIcon";
 import dynamic from "next/dynamic";
 
 
