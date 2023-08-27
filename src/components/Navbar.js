@@ -75,7 +75,7 @@ const Navbar = () => {
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <LinkedInIcon/>
                     </Link>*/}
-                    <Link className={'w-9'} href={'https:instagram.com/dianella.gallery.art/'} target={'_blank'}>
+                    <Link className={'w-9'} href={'https://instagram.com/dianella.gallery.art/'} target={'_blank'}>
                         <InstagramIcon/>
                     </Link>
                     
