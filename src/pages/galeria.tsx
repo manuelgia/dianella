@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
 import Bridge from '../components/Icons/Bridge'
-import Logo from '../components/Icons/Logo'
 import Modal from '../components/Modal'
 import cloudinary from '../../src/utils/cloudinary'
 import getBase64ImageUrl from '../../src/utils/generateBlurPlaceholder'
@@ -49,7 +48,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             }}
           />
         )}
-        <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
+        <div className="columns-1 gap-4 sm:columns-2 xl:columns-2 2xl:columns-3">
           <div className="after:content relative mb-5 flex h-[629px] flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-16 pt-64 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-0">
             <div className="absolute inset-0 flex items-center justify-center opacity-20">
               <span className="flex max-h-full max-w-full items-center justify-center">
@@ -143,7 +142,7 @@ export default Home
 
 export async function getStaticProps() {
   const results = await cloudinary.v2.search
-    .expression(`folder:${process.env.CLOUDINARY_FOLDER}/*`)
+    .expression(`folder:${process.env.CLOUDINARY_FOLDER_ALUMNOS}/*`)
     .sort_by('public_id', 'desc')
     .max_results(400)
     .execute()

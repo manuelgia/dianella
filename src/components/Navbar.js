@@ -67,7 +67,7 @@ const Navbar = () => {
                         
                     {// <CustomLink href={"/projects"} title={'Projects'}/> 
                     }
-                    <CustomLink href={"/articles"} title={'Articles'}/>
+                    <CustomLink href={"/obras"} title={'Obras'}/>
                     <CustomLink href={"/galeria"} title={'Galería'}/>
                 </nav>
                 <nav className={'flex justify-center items-center gap-3 flex-wrap'}>

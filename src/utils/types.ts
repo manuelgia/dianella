@@ -6,6 +6,14 @@ export interface ImageProps {
   public_id: string
   format: string
   blurDataUrl?: string
+  customMetadata?: CustomMetadata
+}
+
+export interface CustomMetadata {
+  alt: string;
+  caption: string;
+  medidas: string;
+  // ... otras propiedades personalizadas que necesites ...
 }
 
 export interface SharedModalProps {
