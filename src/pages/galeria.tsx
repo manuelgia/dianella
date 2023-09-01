@@ -10,11 +10,15 @@ import cloudinary from '../../src/utils/cloudinary'
 import getBase64ImageUrl from '../../src/utils/generateBlurPlaceholder'
 import type { ImageProps } from '../../src/utils/types'
 import { useLastViewedPhoto } from '../../src/utils/useLastViewedPhoto'
+import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
+
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
   const { photoId } = router.query
   const [lastViewedPhoto, setLastViewedPhoto] = useLastViewedPhoto()
+  const [mode, setMode] = useThemeSwitcher();
+
 
   const lastViewedPhotoRef = useRef<HTMLAnchorElement>(null)
 
@@ -48,14 +52,21 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             }}
           />
         )}
-        <div className="columns-1 gap-4 sm:columns-2 xl:columns-2 2xl:columns-3">
-          <div className="after:content relative mb-5 flex h-[629px] flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-16 pt-64 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-0">
-            <div className="absolute inset-0 flex items-center justify-center opacity-20">
-              <span className="flex max-h-full max-w-full items-center justify-center">
-                <Bridge />
-              </span>
-              <span className="absolute left-0 right-0 bottom-0 h-[400px] bg-gradient-to-b from-black/0 via-black to-black"></span>
-            </div>
+        <div className="columns-1 gap-4 sm:columns-1 xl:columns-2 2xl:columns-3"> {/* GRID*/}
+
+<div className={`relative mb-5 flex flex-col items-center justify-end gap-4 overflow-hidden rounded-lg px-6 pb-16 pt-32 text-center shadow-highlight ${mode === 'dark' ? 'bg-black' : 'bg-white/10'}`}>
+<div className="absolute inset-0 flex items-center justify-center opacity-50">
+<span className="flex max-h-full max-w-full items-center justify-center">
+    <Image 
+        alt='Imagen'
+        src={'https://res.cloudinary.com/dd38x4lsc/image/upload/v1693539513/samples/irupriqqndhg0jcnduai.jpg'}
+        width={435} 
+        height={700}
+        objectFit="cover"
+    />
+</span>
+<span className={`absolute left-0 right-0 bottom-0 h-[400px]`}></span>
+</div>
             
             <h1 className="mt-8 mb-4 text-xl sm:text-2xl tracking-widest font-serif">
               Dianella

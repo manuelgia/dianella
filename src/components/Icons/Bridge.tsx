@@ -1,4 +1,4 @@
-export default function Bridge() {
+export default function Bridge( { color }) {
   return (
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
     width="640.000000pt" height="1280.000000pt" viewBox="0 0 640.000000 1280.000000"
@@ -7,7 +7,7 @@ export default function Bridge() {
       Logo para Dianella
    </metadata>
    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-   fill="white" stroke="none">
+   fill={ color } stroke="none">
    <path d="M3135 12788 c-27 -5 -60 -12 -72 -14 -57 -11 -70 -63 -56 -224 l10
    -115 -53 -51 c-29 -29 -57 -65 -61 -80 -8 -29 -9 -156 -4 -669 3 -275 -8 -393
    -41 -432 -13 -16 -21 -15 -141 11 -66 14 -69 14 -169 -15 -55 -16 -107 -34
