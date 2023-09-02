@@ -55,7 +55,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             }}
           />
         )}
-        <div className="columns-1 gap-4 sm:columns-1 xl:columns-2 2xl:columns-2"> {/* GRID*/}
+        <div className="columns-1 gap-4 sm:columns-1 xl:columns-2 2xl:columns-3"> {/* GRID*/}
 
           
           {images.map(({ id, public_id, format, blurDataUrl }) => (
@@ -69,7 +69,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             >
               <Image
                 alt="Next.js Conf photo"
-                className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
+                className="transform rounded-sm brightness-90 transition will-change-auto group-hover:brightness-110"
                 style={{ transform: 'translate3d(0, 0, 0)' }}
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
@@ -125,7 +125,7 @@ export default Home
 
 export async function getStaticProps() {
   const results = await cloudinary.v2.search
-    .expression(`folder:${process.env.CLOUDINARY_FOLDER_ALUMNOS}/*`)
+    .expression(`folder:${process.env.CLOUDINARY_FOLDER_MURALES}/*`)
     .sort_by('public_id', 'asc')
     .max_results(400)
     .execute()

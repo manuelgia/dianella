@@ -68,15 +68,17 @@ const Navbar = () => {
                     {// <CustomLink href={"/projects"} title={'Projects'}/> 
                     }
                     <CustomLink href={"/obras"} title={'Obras'}/>
-                    <CustomLink href={"/galeria"} title={'Alumnos'}/>
-                    <CustomLink href={"/obras"} title={'Talleres'}/>
-                    <CustomLink href={"/galeria"} title={'Murales'}/>
+                    <CustomLink href={"/alumnos"} title={'Alumnos'}/>
+                    <CustomLink href={"/talleres"} title={'Talleres'}/>
+                    <CustomLink href={"/murales"} title={'Murales'}/>
+                    
                 </nav>
-                <nav className={'flex justify-center items-center gap-3 flex-wrap'}>
+                <nav className={'flex justify-center items-center gap-4 flex-wrap'}>
                     {/*Para que se desployee de nuevo
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <LinkedInIcon/>
                     </Link>*/}
+                    <CustomLink href={"/"} title={'Escenografía'}/>
                     <Link className={'w-9'} href={'https://instagram.com/dianella.gallery.art/'} target={'_blank'}>
                         <InstagramIcon/>
                     </Link>
@@ -106,7 +108,9 @@ const Navbar = () => {
                             }
                             <CustomLinkMobile href={"/obras"} title={'Obras'} toggle={handleClick}/>
                             
-                            <CustomLinkMobile href={"/galeria"} title={'Alumnos'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/alumnos"} title={'Alumnos'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/talleres"} title={'Talleres'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/murales"} title={'Murales'} toggle={handleClick}/>
                         </nav>
                         <nav className={'flex justify-center items-center gap-3 flex-wrap mt-2'}>
                             

@@ -7,6 +7,7 @@ export interface ImageProps {
   format: string
   blurDataUrl?: string
   customMetadata?: CustomMetadata
+  
 }
 
 export interface CustomMetadata {

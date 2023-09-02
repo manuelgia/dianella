@@ -20,15 +20,19 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const { photoId } = router.query
   const [lastViewedPhoto, setLastViewedPhoto] = useLastViewedPhoto()
   const [mode, setMode] = useThemeSwitcher();
+  
 
 
   const lastViewedPhotoRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {
     // This effect keeps track of the last viewed photo in the modal to keep the index page in sync when the user navigates back
-    if (lastViewedPhoto && !photoId) {
-      lastViewedPhotoRef.current.scrollIntoView({ block: 'center' })
-      setLastViewedPhoto(null)
+    if (photoId && !lastViewedPhoto) {
+        // Open the modal
+        setLastViewedPhoto(photoId);
+      } else if (!photoId && lastViewedPhoto) {
+        // Close the modal when photoId becomes null
+        setLastViewedPhoto(null);
     }
   }, [photoId, lastViewedPhoto, setLastViewedPhoto])
 
@@ -64,12 +68,12 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               href={`/?photoId=${id}`}
               as={`/p/${id}`}
               ref={id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null}
-              shallow
+              
               className="after:content group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
             >
               <Image
                 alt="Next.js Conf photo"
-                className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
+                className="transform rounded-sm brightness-90 transition will-change-auto group-hover:brightness-110"
                 style={{ transform: 'translate3d(0, 0, 0)' }}
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
