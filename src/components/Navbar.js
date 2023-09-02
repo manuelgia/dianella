@@ -102,9 +102,9 @@ const Navbar = () => {
                             <CustomLinkMobile href={"/about"} title={'Sobre mí'} toggle={handleClick}/>
                             {//<CustomLinkMobile href={"/projects"} title={'Projects'} toggle={handleClick}/>
                             }
-                            <CustomLinkMobile href={"/articles"} title={'Articles'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/obras"} title={'Obras'} toggle={handleClick}/>
                             
-                            <CustomLinkMobile href={"https:dianella-galeria.vercel.app"} title={'Galería'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/galeria"} title={'Galería'} toggle={handleClick}/>
                         </nav>
                         <nav className={'flex justify-center items-center gap-3 flex-wrap mt-2'}>
                             

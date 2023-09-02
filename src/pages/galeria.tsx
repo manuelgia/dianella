@@ -10,7 +10,9 @@ import cloudinary from '../../src/utils/cloudinary'
 import getBase64ImageUrl from '../../src/utils/generateBlurPlaceholder'
 import type { ImageProps } from '../../src/utils/types'
 import { useLastViewedPhoto } from '../../src/utils/useLastViewedPhoto'
-import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
+import useThemeSwitcher from "../components/hooks/useThemeSwitcher"
+import TransitionEffect from "../components/TransitionEffect"
+
 
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
@@ -43,7 +45,8 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
       </Head>
-      <main className="mx-auto max-w-[1960px] p-4">
+      <TransitionEffect />
+      <main className="mx-auto max-w-[1960px] p-4 relative">
         {photoId && (
           <Modal
             images={images}
@@ -78,10 +81,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               Un increíble tour a través del diseño y creatividad de mis alumnos
             </p>
             <a
-              className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
+              className="pointer z-0 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
               href="https://dianella.vercel.app"
               target="_blank"
               rel="noreferrer"
+              
             >
               Página principal
             </a>

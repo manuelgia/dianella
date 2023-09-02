@@ -9,7 +9,9 @@ import cloudinary from '../../src/utils/cloudinary'
 import getBase64ImageUrl from '../../src/utils/generateBlurPlaceholder'
 import type { ImageProps } from '../../src/utils/types'
 import { useLastViewedPhoto } from '../../src/utils/useLastViewedPhoto'
-import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
+import useThemeSwitcher from "../components/hooks/useThemeSwitcher"
+import TransitionEffect from "../components/TransitionEffect";
+
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
@@ -42,6 +44,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
       </Head>
+      <TransitionEffect />
       <main className="mx-auto max-w-[1960px] p-4">
         {photoId && (
           <Modal
@@ -76,7 +79,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         Un increíble tour a través de mis obras
     </p>
     <a
-    className="pointer z-10 mt-6 rounded-lg border bg-white px-3 py-2 text-sm font-semibold text-black transition md:mt-4"
+    className="pointer z-0 mt-6 rounded-lg border bg-white px-3 py-2 text-sm font-semibold text-black transition md:mt-4"
     href="https://dianella.vercel.app"
     target="_blank"
     rel="noreferrer"
@@ -121,39 +124,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           </div>
         ))}
         </div>
-      </main>
-      
-        
-            
-<footer className="bg-white rounded-lg shadow dark:bg-black m-4">
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="https://dianella.vercel.app/" className="flex items-center mb-4 sm:mb-0">
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dianella</span>
-            </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="#" className="mr-4 hover:underline md:mr-6 ">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="#" className="mr-4 hover:underline md:mr-6">Proyectos</a>
-                </li>
-                <li>
-                    <a href="#" className="mr-4 hover:underline md:mr-6 ">Instagram</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline">Contacto</a>
-                </li>
-            </ul>
-        </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://dianella.vercel.app/" className="hover:underline">Dianella™</a>. Todos los derechos reservados.</span>
-    </div>
-</footer>
-
-
-
-      
+      </main>      
     </>
   )
 }
