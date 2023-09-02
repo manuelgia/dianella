@@ -53,15 +53,13 @@ const About = () => {
                         <div className={'col-span-3 flex flex-col justify-start items-start xl:col-span-4 md:col-span-8'}>
                             <h2 className={'mb-4 text-lg font-bold uppercase'}>Bio</h2>
                             <p>
-                                <b>Diseñadora escenográfica</b>; Artista plástica 
-                                y visual; y tallerista de arte que disfruta 
+                                <b>Artista plástica</b> y <b>Diseñadora escenográfica </b> 
+                                que disfruta 
                                 trabajar en entornos dinámicos y en 
                                 contacto con el público con un gran 
                                 interés en producir obras de arte que 
                                 aporten al desarrollo de la educación y 
-                                cultura de mi país. Capaz de trabajar en 
-                                equipo y de forma independiente, según 
-                                las necesidades.
+                                cultura de mi país.
                             </p>
                             
                             </div>

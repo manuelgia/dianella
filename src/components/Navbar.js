@@ -68,7 +68,9 @@ const Navbar = () => {
                     {// <CustomLink href={"/projects"} title={'Projects'}/> 
                     }
                     <CustomLink href={"/obras"} title={'Obras'}/>
-                    <CustomLink href={"/galeria"} title={'Galería'}/>
+                    <CustomLink href={"/galeria"} title={'Alumnos'}/>
+                    <CustomLink href={"/obras"} title={'Talleres'}/>
+                    <CustomLink href={"/galeria"} title={'Murales'}/>
                 </nav>
                 <nav className={'flex justify-center items-center gap-3 flex-wrap'}>
                     {/*Para que se desployee de nuevo
@@ -104,7 +106,7 @@ const Navbar = () => {
                             }
                             <CustomLinkMobile href={"/obras"} title={'Obras'} toggle={handleClick}/>
                             
-                            <CustomLinkMobile href={"/galeria"} title={'Galería'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/galeria"} title={'Alumnos'} toggle={handleClick}/>
                         </nav>
                         <nav className={'flex justify-center items-center gap-3 flex-wrap mt-2'}>
                             

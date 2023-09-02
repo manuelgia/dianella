@@ -28,7 +28,7 @@ export default function Home() {
                             />
                         </div>
                         <div className={'w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'}>
-                            <AnimatedText text={'Dianella Manrique'} className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'/>
+                            <AnimatedText text={'dianella.art'} className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'/>
                             <p className={'text-base text-medium my-4 dark:text-light md:text-sm sm:text-xs'}>
                                 Diseñadora escenográfica y Artista plástica       
                             </p>
