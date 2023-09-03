@@ -1,0 +1,14 @@
+/* Agregar esta animación CSS en tu archivo de estilos */
+@keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .slide-left {
+    animation: slideLeft 0.7s ease-in-out;
+  }
+  
