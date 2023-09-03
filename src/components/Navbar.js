@@ -104,13 +104,11 @@ const Navbar = () => {
                         <nav className={'flex items-center flex-col justify-center'} >
                             <CustomLinkMobile href={'/'} title={'Home'} toggle={handleClick}/>
                             <CustomLinkMobile href={"/about"} title={'Sobre mí'} toggle={handleClick}/>
-                            {//<CustomLinkMobile href={"/projects"} title={'Projects'} toggle={handleClick}/>
-                            }
                             <CustomLinkMobile href={"/obras"} title={'Obras'} toggle={handleClick}/>
-                            
                             <CustomLinkMobile href={"/alumnos"} title={'Alumnos'} toggle={handleClick}/>
                             <CustomLinkMobile href={"/talleres"} title={'Talleres'} toggle={handleClick}/>
                             <CustomLinkMobile href={"/murales"} title={'Murales'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"/"} title={'Escenografía'} toggle={handleClick}/>
                         </nav>
                         <nav className={'flex justify-center items-center gap-3 flex-wrap mt-2'}>
                             
