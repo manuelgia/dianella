@@ -13,7 +13,7 @@ import useThemeSwitcher from "../components/hooks/useThemeSwitcher"
 import TransitionEffect from "../components/TransitionEffect";
 
 
-const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
+const ObrasHome: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
   const { photoId } = router.query
   const [lastViewedPhoto, setLastViewedPhoto] = useLastViewedPhoto()
@@ -34,7 +34,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
       <Head>
-        <title>Next.js Conf 2022 Photos</title>
+        <title>Obras</title>
         <meta
           property="og:image"
           content="https://nextjsconf-pics.vercel.app/og-image.png"
@@ -69,22 +69,22 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         </span>
         <span className={`absolute left-0 right-0 bottom-0 h-[400px]`}></span>
     </div>
-    <h1 className={`mt-8 mb-4 text-xl sm:text-2xl tracking-widest font-serif ${mode === 'dark' ? 'text-white' : 'dark:text-white'}`}>
+    <h1 className={`mt-8 mb-4 opacity-95 text-xl sm:text-2xl tracking-widest font-serif ${mode === 'dark' ? 'text-white' : 'dark:text-white'}`}>
         Dianella
     </h1>
-    <h1 className={`mt-8 mb-4 text-xl font-bold uppercase tracking-widest ${mode === 'dark' ? 'text-white' : 'dark:text-white'}`}>
+    <h1 className={`mt-8 mb-4 opacity-95 text-xl font-bold uppercase tracking-widest ${mode === 'dark' ? 'text-white' : 'dark:text-white'}`}>
         Obras
     </h1>
-    <p className={`max-w-[40ch] ${mode === 'dark' ? 'text-white' : 'dark:text-white'} sm:max-w-[32ch]`}>
+    <p className={`max-w-[40ch] opacity-95 ${mode === 'dark' ? 'text-white' : 'dark:text-white'} sm:max-w-[32ch]`}>
         Un increíble tour a través de mis obras
     </p>
     <a
     className="pointer z-0 mt-6 rounded-lg border bg-white px-3 py-2 text-sm font-semibold text-black transition md:mt-4"
-    href="https://dianella.vercel.app"
+    href="https://api.whatsapp.com/send?phone=51928665580&text=Hola,%20estoy%20interesado%20en%20una%20de%20sus%20obras"
     target="_blank"
     rel="noreferrer"
 >
-    Página principal
+    Me interesa
 </a>
 </div>
 
@@ -129,7 +129,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   )
 }
 
-export default Home
+export default ObrasHome
 
 export async function getStaticProps() {
   const results = await cloudinary.v2.search

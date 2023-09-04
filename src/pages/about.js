@@ -9,7 +9,7 @@ import TransitionEffect from "../components/TransitionEffect";
 import Education from "../components/Education"
 import Logros from '../components/Logros';
 import Image from 'next/image';
-import ImagenAbout from '../../public/images/profile/girl-example.jpg'
+import ImagenAbout from '../../public/images/profile/IMG_20230503_080618.jpg'
 
 
 
@@ -59,7 +59,7 @@ const About = () => {
                                 contacto con el público con un gran 
                                 interés en producir obras de arte que 
                                 aporten al desarrollo de la educación y 
-                                cultura de mi país.
+                                cultura del país. Dedicada a la enseñana artística desde el año 2013.
                             </p>
                             
                             </div>
@@ -72,7 +72,7 @@ const About = () => {
                                         Alumnos
                                     </h2>
                                 </div>
-                                <div className={'flex flex-col items-end justify-center xl:items-center'}>
+                                {/*<div className={'flex flex-col items-end justify-center xl:items-center'}>
                                     <span className={'text-6xl font-bold md:text-6xl sm:text-4xl xs:text-3xl'}>
                                         <AnimatedNumbers value={50}/>+
                                     </span>
@@ -80,14 +80,15 @@ const About = () => {
                                         Projectos
                                     </h2>
                                 </div>
-                                {/*<div className={'flex flex-col items-end justify-center xl:items-center'}>
+                                */}
+                                <div className={'flex flex-col items-end justify-center xl:items-center'}>
                                     <span className={'text-6xl font-bold md:text-6xl sm:text-4xl xs:text-3xl'}>
-                                        <AnimatedNumbers value={10}/>+
+                                        <AnimatedNumbers value={9}/>+
                                     </span>
                                     <h2 className={'text-xl xl:text-center md:text-lg sm:text-base xs:text-sm'}>
-                                        Experiencia
+                                        Años de Experiencia
                                     </h2>
-                                </div>*/}
+                                </div>
                                 
                             </div>
                             

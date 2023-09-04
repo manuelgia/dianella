@@ -51,7 +51,7 @@ const Navbar = () => {
         setIsOpen(!isOpen)
     }
     return (
-        <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-50 lg:px-16 md:px-12 sm:px-8'>
+        <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-30 lg:px-16 md:px-12 sm:px-8'>
             <button className={'flex-col justify-center items-center hidden lg:flex'} onClick={handleClick}>
                 <span
                     className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
@@ -78,7 +78,7 @@ const Navbar = () => {
                     <Link className={'w-9'} href={'/'} target={'_blank'}>
                         <LinkedInIcon/>
                     </Link>*/}
-                    <CustomLink href={"/"} title={'Escenografía'}/>
+                    <CustomLink href={"https://drive.google.com/file/d/1ZEQDW8kfYdm1I77vv4KJY9fzltdb8Vwu/view?usp=drive_link"} title={'Escenografía'} target={'_blank'}/>
                     <Link className={'w-9'} href={'https://instagram.com/dianella.gallery.art/'} target={'_blank'}>
                         <InstagramIcon/>
                     </Link>
@@ -100,7 +100,7 @@ const Navbar = () => {
                     <motion.div
                         initial={{scale: 0, opacity: 0, x: '-50%', y: '-50%'}}
                         animate={{scale: 1, opacity: 1}}
-                        className={'min-w-[70vw] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-between flex-col items-center z--101 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'}>
+                        className={'min-w-[70vw] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-between flex-col items-center bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'}>
                         <nav className={'flex items-center flex-col justify-center'} >
                             <CustomLinkMobile href={'/'} title={'Home'} toggle={handleClick}/>
                             <CustomLinkMobile href={"/about"} title={'Sobre mí'} toggle={handleClick}/>
@@ -108,7 +108,7 @@ const Navbar = () => {
                             <CustomLinkMobile href={"/alumnos"} title={'Alumnos'} toggle={handleClick}/>
                             <CustomLinkMobile href={"/talleres"} title={'Talleres'} toggle={handleClick}/>
                             <CustomLinkMobile href={"/murales"} title={'Murales'} toggle={handleClick}/>
-                            <CustomLinkMobile href={"/"} title={'Escenografía'} toggle={handleClick}/>
+                            <CustomLinkMobile href={"https://drive.google.com/file/d/1ZEQDW8kfYdm1I77vv4KJY9fzltdb8Vwu/view?usp=drive_link"} title={'Escenografía'} toggle={handleClick}/>
                         </nav>
                         <nav className={'flex justify-center items-center gap-3 flex-wrap mt-2'}>
                             

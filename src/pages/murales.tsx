@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
-import Bridge from '../components/Icons/Bridge'
 import Modal from '../components/Modal'
 import cloudinary from '../../src/utils/cloudinary'
 import getBase64ImageUrl from '../../src/utils/generateBlurPlaceholder'
@@ -13,19 +11,15 @@ import { useLastViewedPhoto } from '../../src/utils/useLastViewedPhoto'
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher"
 import TransitionEffect from "../components/TransitionEffect"
 
-
-
-const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
+const MuralesHome: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
   const { photoId } = router.query
   const [lastViewedPhoto, setLastViewedPhoto] = useLastViewedPhoto()
   const [mode, setMode] = useThemeSwitcher();
 
-
   const lastViewedPhotoRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {
-    // This effect keeps track of the last viewed photo in the modal to keep the index page in sync when the user navigates back
     if (lastViewedPhoto && !photoId) {
       lastViewedPhotoRef.current.scrollIntoView({ block: 'center' })
       setLastViewedPhoto(null)
@@ -56,16 +50,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           />
         )}
         <div className="columns-1 gap-4 sm:columns-1 xl:columns-2 2xl:columns-3"> {/* GRID*/}
-
-          
           {images.map(({ id, public_id, format, blurDataUrl }) => (
-            <Link
+            <div
               key={id}
-              href={`/?photoId=${id}`}
-              as={`/p/${id}`}
-              ref={id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null}
-              shallow
               className="after:content group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
+              tabIndex={0} // Agrega esto para hacer que el div sea enfocable
             >
               <Image
                 alt="Next.js Conf photo"
@@ -81,47 +70,15 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
                   (max-width: 1536px) 33vw,
                   25vw"
               />
-            </Link>
+            </div>
           ))}
         </div>
       </main>
-      
-        
-            
-<footer className="bg-white rounded-lg shadow dark:bg-black m-4">
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="https://dianella.vercel.app/" className="flex items-center mb-4 sm:mb-0">
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dianella</span>
-            </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="#" className="mr-4 hover:underline md:mr-6 ">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="#" className="mr-4 hover:underline md:mr-6">Proyectos</a>
-                </li>
-                <li>
-                    <a href="#" className="mr-4 hover:underline md:mr-6 ">Instagram</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline">Contacto</a>
-                </li>
-            </ul>
-        </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://dianella.vercel.app/" className="hover:underline">Dianella™</a>. Todos los derechos reservados.</span>
-    </div>
-</footer>
-
-
-
-      
     </>
   )
 }
 
-export default Home
+export default MuralesHome
 
 export async function getStaticProps() {
   const results = await cloudinary.v2.search

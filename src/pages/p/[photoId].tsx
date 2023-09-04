@@ -7,7 +7,7 @@ import cloudinary from '../../../src/utils/cloudinary'
 import getBase64ImageUrl from '../../../src/utils/generateBlurPlaceholder'
 import type { ImageProps } from '../../../src/utils/types'
 
-const Home: NextPage = ({ currentPhoto }: { currentPhoto: ImageProps }) => {
+const GalleryPage: NextPage = ({ currentPhoto }: { currentPhoto: ImageProps }) => {
   const router = useRouter()
   const { photoId } = router.query
   let index = Number(photoId)
@@ -17,7 +17,7 @@ const Home: NextPage = ({ currentPhoto }: { currentPhoto: ImageProps }) => {
   return (
     <>
       <Head>
-        <title>Next.js Conf 2022 Photos</title>
+        <title>Galería</title>
         <meta property="og:image" content={currentPhotoUrl} />
         <meta name="twitter:image" content={currentPhotoUrl} />
       </Head>
@@ -28,7 +28,7 @@ const Home: NextPage = ({ currentPhoto }: { currentPhoto: ImageProps }) => {
   )
 }
 
-export default Home
+export default GalleryPage
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const results = await getResults()
