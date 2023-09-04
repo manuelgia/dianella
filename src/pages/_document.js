@@ -4,7 +4,12 @@ import Script from "next/script";
 export default function Document() {
     return (
         <Html lang="en">
-            <Head/>
+            <Head>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:ital,wght@1,300;1,700&display=swap" rel="stylesheet"/>
+
+            </Head>            
             <body>
             <Script strategy='beforeInteractive' id={'theme-switcher'}>
                 {`

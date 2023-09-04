@@ -6,13 +6,17 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import TransitionEffect from "../components/TransitionEffect"
-
 import Image from 'next/image'; // Importa el componente Image de Next.js
+import { Cinzel, Alegreya_Sans } from 'next/font/google';
 
 import ProfilePicture from '../../public/images/profile/marty-o-neill-Jo-ypJVt8gQ-unsplash.jpg';
 import ImagenPrueba from '../../public/images/profile/PSX_20210109_133652.jpg';
 import ImagenPrueba2 from '../../public/images/profile/horizontal.jpg';
 import ImagenPrueba3 from '../../public/images/profile/prueba169.jpg';
+
+const cinzel = Cinzel({ weight: '400', subsets: ['latin']  })
+const alegreya = Alegreya_Sans({ weight: '400', subsets: ['latin']  })
+
 
 export default function Home() {
   const images = useMemo(
@@ -64,13 +68,20 @@ export default function Home() {
       <main className="relative flex flex-col items-center justify-center text-dark w-full min-h-screen">
         {/* Div que contiene el texto */}
         <div className={`bg-white p-4 rounded-lg shadow-lg dark:bg-dark opacity-90 text-center ${styles.textContainer} absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 md:w-2/3 sm:w-4/6`}>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-medium dark:text-light" style={{ marginBottom: '0.4rem' }}><span className={cinzel.className} style={{ letterSpacing: '2px' }}>
+          Artista plástica y Diseñadora escenográfica 
+          </span>
+          </p>
           <AnimatedTittle
             text="Dianella.art"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-dark dark:text-light"
+            className=" font- text-2xl sm:text-5xl md:text-2xl lg:text-6xl xl:text-7xl text-dark dark:text-light"
+            
           />
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-medium dark:text-light" style={{ fontStyle: 'italic' }}>
-          Artista plástica y Diseñadora escenográfica 
+          <p className="text-base sm:text-3x1 md:text-xl lg:text-2xl text-medium dark:text-light " style={{ marginTop: '0.3rem' }}><span className={alegreya.className} style={{ letterSpacing: '2px' }}>
+          GLADYS MANRIQUE
+          </span>
           </p>
+          
           <Link
             className="bg-dark dark:bg-light dark:text-dark text-light px-6 py-2 flex items-center justify-center text-lg font-semibold dark:hover:bg-dark hover:bg-turquesa transition duration-300 dark:hover:text-light hover:text-dark border border-solid border-transparent hover:border-dark dark:hover:border-light mt-4 md:p-2 md:px-4 md:text-base"
             href="https://api.whatsapp.com/send?phone=51928665580&text=Hola,%20vengo%20de%20dianella.art"
@@ -128,6 +139,7 @@ export default function Home() {
           </button>
         </div>
       </main>
+      
     </>
   );
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import {motion} from "framer-motion";
+import { Mr_Dafoe } from 'next/font/google';
+const mr = Mr_Dafoe({weight:'400', subsets:['latin']})
 
 
 const quote = {
@@ -30,7 +32,7 @@ const singleWord = {
 const AnimatedTittle = ({text, className = ''}) => {
     return (
         <div className={'w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0'}>
-            <motion.h1 className={`inline-block w-full text-dark font-bold dark:text-light text-8xl ${className}`}
+            <motion.h1 className={`inline-block w-full text-dark font-bold dark:text-light text-8xl ${mr.className}${className}`}
                        variants={quote}
                        initial='initial'
                        animate='animate'
