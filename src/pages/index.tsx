@@ -54,13 +54,17 @@ export default function Home() {
       <Head>
         <title>Dianella.art</title>
         <meta
+          name="description"
+          content="Artista plástica, Diseñadora escenográfica, arte, Lima, artista Lima, Clases de arte, escenografo, artista plastico, artista plastica, artista, ensad"
+        />
+        <meta
           property="og:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694064468/dianella/yxkxeakldife2iqhaqfg.jpg"
         />
         
         <meta
           name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694064468/dianella/yxkxeakldife2iqhaqfg.jpg"
         />
         
       </Head>

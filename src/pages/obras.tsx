@@ -34,15 +34,24 @@ const ObrasHome: NextPage = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
       <Head>
-        <title>Obras</title>
+        <title>Obras - Dianella.art</title>
+        <meta
+          name="description"
+          content="Explora una colección única de obras de arte"
+        />
         <meta
           property="og:image"
           content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
         <meta
-          name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          name="keywords"
+          content="obras de teatro, escenografo, obras, galería de arte, escenografa, artista plastica"
         />
+        <meta
+          name="author"
+          content="Dianella"
+        />
+        
       </Head>
       <TransitionEffect />
       <main className="mx-auto max-w-[1960px] p-4">

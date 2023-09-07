@@ -106,9 +106,35 @@ const Experience = () => {
                                 "“Clue”-Markham College 2022",
                                 "“El musical (Matilda, Hairspray, The Wicked, Anita La Huerfanita, School of Rock, Encanto, El rey león) - Markham College 2022",
                                 "“Charlie y la fábrica de chocolates” Cambridge College 2022."
+                            ]}/>
+                    <Details
+                        position={'Profesora de dibujo y pintura'}
+                        company={'Escuela Superior Pedagógica Monterrico'}
+                        companyLink={'https://monterrico.edu.pe'}
+                        time={'2023'}
+                        address={'Lima, Lima'}
+                        work={'Clases de arte para todas las edades'}
+                    />
+                    <Details
+                        position={'Profesora de arte y música'}
+                        company={'Artedia'}
+                        companyLink={'https://www.facebook.com/dianellaMch'}
+                        time={'2022 - Actualidad'}
+                        address={'Lima, Lima'}
+                        work={'Clases de arte para todas las edades'}
+                    />
+                    <Details
+                        position={'Equipo de realización escenográfica bajo la dirección de pepe sialer'}
+                        company={'Pepe Salier'}
+                        companyLink={'https://www.facebook.com/pepe.sialer.9'}
+                        time={'05/2023'}
+                        address={'Lima, Lima'}
+                        work={'Realización de escenografía para las obras teatrales:'}
+                        obras={[
+                                "“Turandot” - Gran Teatro Nacional 2023",
+                                "“Salomé” - Teatro Británico 2023",
+                               
                             ]}
-
-
                     />
                 </ul>
             </div>

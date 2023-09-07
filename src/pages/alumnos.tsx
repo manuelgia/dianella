@@ -30,7 +30,11 @@ const AlumnosHome: NextPage = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
       <Head>
-        <title>Alumnos</title>
+        <title>Alumnos - Dianella.art</title>
+        <meta
+          name="description"
+          content="Un increíble tour a través de la creatividad de mis alumnos"
+        />
         <meta
           property="og:image"
           content="https://nextjsconf-pics.vercel.app/og-image.png"

@@ -21,14 +21,22 @@ export default function Talleres() {
   return (
     <>
       <Head>
-        <title>Next.js Conf 2022 Photos</title>
+        <title>Talleres - Dianella.art</title>
+        <meta
+          name="description"
+          content="Nuevos talleres para ti"
+        />
         <meta
           property="og:image"
           content="https://nextjsconf-pics.vercel.app/og-image.png"
         />
         <meta
-          name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          name="keywords"
+          content="talleres, talleres de pintura, dibujo, murales, escenografía, talleres de verano"
+        />
+        <meta
+          name="author"
+          content="Dianella"
         />
       </Head>
       <TransitionEffect />
