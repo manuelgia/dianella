@@ -61,27 +61,25 @@ export default function Home() {
           property="og:image"
           content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694064468/dianella/yxkxeakldife2iqhaqfg.jpg"
         />
-        
         <meta
           name="twitter:image"
           content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694064468/dianella/yxkxeakldife2iqhaqfg.jpg"
         />
-        
       </Head>
       <TransitionEffect />
       <main className="relative flex flex-col items-center justify-center text-dark w-full min-h-screen">
         {/* Div que contiene el texto */}
         <div className={`bg-white p-4 rounded-lg shadow-lg dark:bg-dark opacity-90 text-center ${styles.textContainer} absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 md:w-2/3 sm:w-4/6`}>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-medium dark:text-light" style={{ marginBottom: '0.4rem' }}><span className={cinzel.className} style={{ letterSpacing: '2px' }}>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-medium dark:text-light" style={{ marginBottom: '0.6rem' }}><span className={cinzel.className} style={{ letterSpacing: '2px' }}>
           Artista plástica y Diseñadora escenográfica 
           </span>
           </p>
           <AnimatedTittle
-            text="Dianella.art"
-            className=" font- text-2xl sm:text-5xl md:text-2xl lg:text-6xl xl:text-7xl text-dark dark:text-light"
+            text="Dianella. Art"
+            className=" font- text-2xl sm:text-4xl md:text-2xl lg:text-6xl xl:text-7xl text-dark dark:text-light"
             
           />
-          <p className="text-base sm:text-3x1 md:text-xl lg:text-2xl text-medium dark:text-light " style={{ marginTop: '0.3rem' }}><span className={alegreya.className} style={{ letterSpacing: '2px' }}>
+          <p className="text-base sm:text-3x1 md:text-xl lg:text-2xl text-medium dark:text-light " style={{ marginTop: '0.6rem' }}><span className={alegreya.className} style={{ letterSpacing: '2px' }}>
           GLADYS MANRIQUE
           </span>
           </p>
