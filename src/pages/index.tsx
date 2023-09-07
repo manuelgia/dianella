@@ -9,10 +9,13 @@ import TransitionEffect from "../components/TransitionEffect"
 import Image from 'next/image'; // Importa el componente Image de Next.js
 import { Cinzel, Alegreya_Sans } from 'next/font/google';
 
-import ProfilePicture from '../../public/images/profile/marty-o-neill-Jo-ypJVt8gQ-unsplash.jpg';
-import ImagenPrueba from '../../public/images/profile/PSX_20210109_133652.jpg';
-import ImagenPrueba2 from '../../public/images/profile/horizontal.jpg';
-import ImagenPrueba3 from '../../public/images/profile/prueba169.jpg';
+import ProfilePicture from '../../public/images/profile/fondo4.jpg';
+import ImagenPrueba from '../../public/images/profile/fondo3.jpg';
+import ImagenPrueba2 from '../../public/images/profile/fondo1.jpg';
+import ImagenPrueba3 from '../../public/images/profile/fondo2.jpg';
+import ImagenPrueba4 from '../../public/images/profile/fondo5.jpg';
+import ImagenPrueba5 from '../../public/images/profile/PSX_20210109_133652.jpg';
+
 
 const cinzel = Cinzel({ weight: '400', subsets: ['latin']  })
 const alegreya = Alegreya_Sans({ weight: '400', subsets: ['latin']  })
@@ -20,7 +23,7 @@ const alegreya = Alegreya_Sans({ weight: '400', subsets: ['latin']  })
 
 export default function Home() {
   const images = useMemo(
-    () => [ProfilePicture, ImagenPrueba, ImagenPrueba2, ImagenPrueba3],
+    () => [ProfilePicture, ImagenPrueba, ImagenPrueba2, ImagenPrueba3, ImagenPrueba4, ImagenPrueba5],
     []
   );
   const [activeIndex, setActiveIndex] = useState(0);
