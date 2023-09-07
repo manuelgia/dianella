@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Layout from "../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
-import ProfilePicture from '../../public/images/profile/batman-pic.png'
 import AnimatedText from "../components/AnimatedText";
 import AnimatedTittle from '../components/AnimatedTittle';
 import {LinkArrow} from "../components/Icons";
@@ -20,13 +19,7 @@ export default function Home() {
                 <Layout className='pt-0 md:pt-16 sm:pt-8'>
                     <div className="flex items-center justify-center w-full lg:flex-col">
                         <div className={'w-1/2 md:w-full'}>
-                            <Image
-                                src={ProfilePicture}
-                                priority
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                alt='foto de perfil'
-                                className={'w-full h-auto lg:hidden md:inline-block md:w-full'}
-                            />
+                            
                         </div>
                         <div className={'w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'}>
                             <AnimatedText text={'dianella.art'} className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' style={{ textTransform: 'lowercase' }}/>
