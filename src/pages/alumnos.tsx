@@ -65,7 +65,7 @@ const AlumnosHome: NextPage = ({ images }: { images: ImageProps[] }) => {
               <Image
                 alt="Si no puedes ver esta imagen, contáctanos"
                 key={id}
-                className="transform rounded-sm brightness-90 transition will-change-auto group-hover:brightness-110"
+                className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
                 style={{ transform: 'translate3d(0, 0, 0)' }}
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
