@@ -45,6 +45,14 @@ const About = () => {
                 name="description"
                 content="Descubre más acerca de mi trayectoria artística"
                 />
+                <meta
+                property="og:image"
+                content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
+                />
+                <meta
+                name="twitter:image"
+                content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
+                />
         </Head>
             <TransitionEffect />
             <main className={'w-full flex flex-col justify-center items-center dark:text-light'}>
@@ -61,7 +69,7 @@ const About = () => {
                                     contacto con el público con un gran 
                                     interés en producir obras de arte que 
                                     aporten al desarrollo de la educación y 
-                                    cultura del país. Dedicada a la enseñana artística desde el año 2013.
+                                    cultura del país. Dedicada a la enseñanza artística desde el año 2013.
                                 </p>
                             
                             </div>

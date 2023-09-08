@@ -62,11 +62,11 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694064468/dianella/yxkxeakldife2iqhaqfg.jpg"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694064468/dianella/yxkxeakldife2iqhaqfg.jpg"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
         />
       </Head>
       <TransitionEffect />
@@ -79,7 +79,7 @@ export default function Home() {
           </p>
           <AnimatedTittle
             text="Dianella. Art"
-            className=" font- text-2xl sm:text-4xl md:text-2xl lg:text-6xl xl:text-7xl text-dark dark:text-light"
+            className=" font- text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-dark dark:text-light"
             
           />
           <p className="text-base sm:text-3x1 md:text-xl lg:text-2xl text-medium dark:text-light " style={{ marginTop: '0.6rem' }}><span className={alegreya.className} style={{ letterSpacing: '2px' }}>

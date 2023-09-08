@@ -105,7 +105,8 @@ const Experience = () => {
                                 "“Matilda”- Cambridge College 2019",
                                 "“Clue”-Markham College 2022",
                                 "“El musical (Matilda, Hairspray, The Wicked, Anita La Huerfanita, School of Rock, Encanto, El rey león) - Markham College 2022",
-                                "“Charlie y la fábrica de chocolates” Cambridge College 2022."
+                                "“Charlie y la fábrica de chocolates” Cambridge College 2022.",
+                                "“Cinderella” San Silvestre School 2023"
                             ]}/>
                     <Details
                         position={'Profesora de dibujo y pintura'}
@@ -113,7 +114,7 @@ const Experience = () => {
                         companyLink={'https://monterrico.edu.pe'}
                         time={'2023'}
                         address={'Lima, Lima'}
-                        work={'Clases de arte para todas las edades'}
+                        work={'Taller de dibujo y pintura dirigido a jóvenes y adultos'}
                     />
                     <Details
                         position={'Profesora de arte y música'}

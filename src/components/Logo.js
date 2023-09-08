@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import LogoPng from '../../public/images/profile/logo.png';
 
 const MotionLink = motion(Link);
 
@@ -21,7 +23,9 @@ const Logo = () => {
           ],
           transition: { duration:1, repeat: Infinity },
         }}
-      >CC</MotionLink>
+      >
+      <Image src={LogoPng} alt="Logo" width={60} height={60} />
+      </MotionLink>
     </div>
   );
 };
