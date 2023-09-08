@@ -37,11 +37,11 @@ const AlumnosHome: NextPage = ({ images }: { images: ImageProps[] }) => {
         />
         <meta
           property="og:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
         />
         <meta
           name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
         />
       </Head>
       <TransitionEffect />

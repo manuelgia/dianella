@@ -29,14 +29,14 @@ const MuralesHome: NextPage = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
       <Head>
-        <title>Next.js Conf 2022 Photos</title>
+        <title>Murales - Dianella.art</title>
         <meta
           property="og:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
         />
         <meta
           name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
         />
       </Head>
       <TransitionEffect />
@@ -57,7 +57,7 @@ const MuralesHome: NextPage = ({ images }: { images: ImageProps[] }) => {
               tabIndex={0} // Agrega esto para hacer que el div sea enfocable
             >
               <Image
-                alt="Next.js Conf photo"
+                alt="Si no puedes ver estos murales, contáctanos"
                 className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
                 style={{ transform: 'translate3d(0, 0, 0)' }}
                 placeholder="blur"
