@@ -79,7 +79,7 @@ const Navbar = () => {
                         <LinkedInIcon/>
                     </Link>*/}
                     <CustomLink href={"https://drive.google.com/file/d/1ZEQDW8kfYdm1I77vv4KJY9fzltdb8Vwu/view?usp=drive_link"} title={'Escenografía'} target={'_blank'}/>
-                    <Link className={'w-9'} href={'https://instagram.com/dianella.gallery.art/'} target={'_blank'}>
+                    <Link className={'w-9'} href={'https://instagram.com/dianella.art/'} target={'_blank'}>
                         <InstagramIcon/>
                     </Link>
                     
@@ -119,7 +119,7 @@ const Navbar = () => {
                             <Link className={'w-9'} href={'/'} target={'_blank'}>
                                 <PinterestIcon/>
                             </Link> */}
-                            <Link className={'w-9'} href={'https:instagram.com/dianella.gallery.art/'} target={'_blank'}>
+                            <Link className={'w-9'} href={'https:instagram.com/dianella.art/'} target={'_blank'}>
                                 <InstagramIcon/>
                             </Link>
                             
