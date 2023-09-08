@@ -58,7 +58,7 @@ export default function Home() {
         <title>Dianella.art</title>
         <meta
           name="description"
-          content="Artista plástica, Diseñadora escenográfica, arte, Lima, artista Lima, Clases de arte, escenografo, artista plastico, artista plastica, artista, ensad"
+          content="Artista plástica y Diseñadora escenográfica que disfruta trabajar en entornos dinámicos y en contacto con el público con un gran interés en producir obras de arte que aporten al desarrollo de la educación y cultura del país"
         />
         <meta
           property="og:image"
