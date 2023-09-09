@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import AnimatedText from '../components/AnimatedText';
 import AnimatedTittle from '../components/AnimatedTittle';
-import { LinkArrow } from '../components/Icons';
+import Script from 'next/script'
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
@@ -68,7 +68,30 @@ export default function Home() {
           name="twitter:image"
           content="https://res.cloudinary.com/dd38x4lsc/image/upload/v1694145782/dianella/aczlqv8iym68yfzb8x6a.jpg"
         />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'),{
+            page_path: window.location.pathname,
+          };
+          `,
+        }}
+        />
       </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
       <TransitionEffect />
       <main className="relative flex flex-col items-center justify-center text-dark w-full min-h-screen">
         {/* Div que contiene el texto */}
